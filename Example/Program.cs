@@ -45,3 +45,29 @@ void PrintArray(string[] stringArray)
               Console.Write($"{stringArray[stringArray.Length-1]} ");
               Console.WriteLine("]");
 }
+
+/// <summary>
+/// Метод формирует массив из элементов массива строк, длинна которых меньше либо равна 3
+/// </summary>
+/// <param name="stringArray">массив для выборки</param>
+/// <returns>Массив, являющийся результатом выборки </returns>
+string[] ArraySelection(string[] stringArray)
+{
+              int k = 0;
+              for (int i = 0; i < stringArray.Length; i++)
+              {
+                            if (stringArray[i].Length <= 3)
+                                          k++;
+              }
+              string[] rezalt = new string[k];
+              int j = 0;
+              for (int i = 0; i < stringArray.Length; i++)
+              {
+                            if (stringArray[i].Length <= 3)
+                            {
+                                          rezalt[j] = stringArray[i];
+                                          j++;
+                            }
+              }
+              return rezalt;
+}
