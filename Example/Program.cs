@@ -17,3 +17,16 @@ string StringRand(int length)
               }
               return str;
 }
+
+/// <summary>
+/// Метод формирует элементы массива из  строк
+/// </summary>
+/// <param name="stringArray"> массив для котрого необходимо выполнить формирование элементов </param>
+void ArrayStr(string[] stringArray)
+{
+
+              for (int i = 0; i < stringArray.Length; i++)
+              {
+                            stringArray[i] = StringRand(new Random().Next(1, 7));
+              }
+}
