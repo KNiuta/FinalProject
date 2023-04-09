@@ -30,3 +30,18 @@ void ArrayStr(string[] stringArray)
                             stringArray[i] = StringRand(new Random().Next(1, 7));
               }
 }
+
+/// <summary>
+/// Метод для вывода на печать массива строк 
+/// </summary>
+/// <param name="stringArray">массив для вывода</param>
+void PrintArray(string[] stringArray)
+{
+              Console.Write("[");
+              for (int i = 0; i < stringArray.Length-1; i++)
+              {
+                            Console.Write($"{stringArray[i]}, ");
+              }
+              Console.Write($"{stringArray[stringArray.Length-1]} ");
+              Console.WriteLine("]");
+}
