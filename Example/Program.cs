@@ -1,4 +1,13 @@
 ﻿
+
+string[] newArray = new string[new Random().Next(1, 10)];
+ArrayStr(newArray);
+Console.WriteLine("Исходный массив: ");
+PrintArray(newArray);
+Console.WriteLine("Результат: ");
+PrintArray(ArraySelection(newArray));
+
+
 /// <summary>
 /// Метод формерует строку из случайных букв заданной длинны 
 /// </summary>
